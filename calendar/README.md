@@ -4,16 +4,20 @@ The goal of top-down design is for each module to provide clearly defined functi
 
 The three overall steps of the calendar year program are getting the requested year from the user, creating the calendar year structure, and displaying the year. The functionality of displaying the calendar year is not too complex and can be contained in a single function. However, constructing the calendar year takes significantly more steps. Part of a well- designed program is to break those steps up, along their logical boundaries into their own functions. Implement the following functions to produce a program that can construct and display a calendar year:
 
-(a) def leap_year(year): Returns True if the input argument year is a leap year. Oth- erwise, returns False. Check http://en.wikipedia.org/wiki/Leap_year#Algorithm for how to do this.
+#### (a) 
+def leap_year(year): Returns True if the input argument year is a leap year. Oth- erwise, returns False. Check http://en.wikipedia.org/wiki/Leap_year#Algorithm for how to do this.
 
-(b) def day_of_week_jan1(year): Returns the day of the week for January 1 of the in- put argument year. year must be between 1800 and 2099. The returned value must be in the range 0-6 (where 0-Sun, 1-Mon, . . ., 6-Sat). Check http://en.wikipedia. org/wiki/Determination_of_the_day_of_the_week#Gauss.27_algorithm for how to do this. The weekday of the first of January in year A is given by:
+#### (b)
+def day_of_week_jan1(year): Returns the day of the week for January 1 of the in- put argument year. year must be between 1800 and 2099. The returned value must be in the range 0-6 (where 0-Sun, 1-Mon, . . ., 6-Sat). Check http://en.wikipedia. org/wiki/Determination_of_the_day_of_the_week#Gauss.27_algorithm for how to do this. The weekday of the first of January in year A is given by:
 d = R(1 + 5R(A − 1, 4) + 4R(A − 1, 100) + 6R(A − 1, 400), 7)
 where R(y,x) is a function that returns the remainder when y is divided by x. In
 Python, it is similar to executing y % x.
 
-(c) def num_days_in_month(month_num, leap_year): Returns the number of days in a given month. month_num must be in the range 1-12, inclusive. leap_year must be True if the month occurs in a leap year. Otherwise, it should be False.
+#### (c)
+def num_days_in_month(month_num, leap_year): Returns the number of days in a given month. month_num must be in the range 1-12, inclusive. leap_year must be True if the month occurs in a leap year. Otherwise, it should be False.
 
-(d) def construct_cal_month(month_num, first_day_of_month, num_days_in_month): Returns a formatted calendar month for display on the screen. month_num must be
+#### (d)
+def construct_cal_month(month_num, first_day_of_month, num_days_in_month): Returns a formatted calendar month for display on the screen. month_num must be
 in the range 1-12, inclusive. first_day_of_month must be in the range 0-6 (where 0-Sun, 1-Mon, . . ., 6-Sat). Return a list of strings of the form,
 [month_name, week1, week2, ...,]
 For example, the first two weeks of January 2015 will be
@@ -50,7 +54,8 @@ January
 
 Note that the `*` marks here should be replaced by whitespaces.
 
-(e) def construct_cal_year(year): Return a formatted calendar year for display on the screen. year must be in the range 1800-2099, inclusive. Return a list of the form,
+#### (e)
+def construct_cal_year(year): Return a formatted calendar year for display on the screen. year must be in the range 1800-2099, inclusive. Return a list of the form,
 [year, month1, month2, month3, ..., month12]
 in which year is an int and each month is a sublist (i.e. month1, month2, . . .) is of the form
 [month_name, week_1_dates, week_2_dates, ...,]
