@@ -1,0 +1,3 @@
+Go to: https://missing.csail.mit.edu/2020/version-control/
+
+For Mac users: https://stackoverflow.com/questions/18393498/gitignore-all-the-ds-store-files-in-every-folder-and-subfolder/38797342
