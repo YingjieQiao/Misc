@@ -1,0 +1,2 @@
+how to retrieve xml data from url using python:
+https://stackoverflow.com/questions/54764528/how-to-read-xml-file-from-url-in-python
