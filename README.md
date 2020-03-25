@@ -1,3 +1,4 @@
 # Misc
 
-Rome wasn't built in a day. Yet I should build it efficiently.
+
+This is basically the messy corner of my desk, where I look for missing stuff / my memo / and temp notes
