@@ -1,5 +1,0 @@
-'0' refers to the character zero, which has an ASCII value of 48. Character types can be interpreted as numbers (e.g., 48) or as ASCII characters (e.g., '0'). It makes no difference to the compiler; in the end, they're all numbers — what matters is the engineer's interpretation of the data. Is it a character value or a numeric value?
-
-'\0' refers to the null character (ASCII value 0), or a number of value 0, depending on how you interpret the data. As a character, it is a string terminator in C; in other words, it marks the end of a string. It's a non-printing value.  As a number, it's zero. As a boolean, it's false. To the compiler, it's zero, but its interpretation is up to you.
-
-'0' and '\0' cannot be used interchangeably at all, because they are different values. 48 is different from 0, and the character zero is different from the null character (string terminator). Using a '\0' in a string where you meant '0' will terminate your string early. Using a 48 where you meant a 0 will make your math all wrong.
