@@ -1,3 +1,5 @@
 Go to: https://missing.csail.mit.edu/2020/version-control/
 
 For Mac users: https://stackoverflow.com/questions/18393498/gitignore-all-the-ds-store-files-in-every-folder-and-subfolder/38797342
+
+git push LARRRGE files that are beyond the 50/100 mb restriction, use git lfs: https://medium.com/@AyunasCode/how-to-push-large-files-to-github-253d05cc6a09
