@@ -19,5 +19,6 @@ class AlternateApp(App):
         else:
             self.label.text = "Programming is fun"
             self.state = 0
+            
 myapp = AlternateApp()
 myapp.run()

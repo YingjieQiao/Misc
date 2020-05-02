@@ -9,15 +9,15 @@ class MyLabel(Label):
 
     def __init__(self, **kwargs):
         Label.__init__(self, **kwargs)
-        self.bind(size=self.setter('text_size'))
-        self.padding = (20, 20)
+        #self.bind(size=self.setter('text_size'))
+        #self.padding = (20, 20)
         self.font_size = 24
         self.halign='left'
         self.valign='middle'
 
 class MyTextInput(TextInput):
     def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+        TextInput.__init__(self,**kwargs)
         self.hint_text = "enter a value"
         self.input_filter = "float"
         self.fond_size = 72
